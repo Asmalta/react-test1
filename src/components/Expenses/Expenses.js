@@ -23,6 +23,7 @@ const Expenses = (props) => {
           selected={setYear}
           onSaveExpenseFilterYear={saveExpenseFilterHadler}
         />
+        {filterExpenses === 0 && <p>No expenses found.</p>}
         {filterExpenses.length === 0 ? <p>There are no expenses for this year.</p> : 
         filterExpenses.map((expense) => (
           <ExpenseItem

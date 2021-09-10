@@ -32,21 +32,6 @@ const DUMMY_EXPENSES = [
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
-  // const months = [
-  //   "Jan",
-  //   "Feb",
-  //   "Mar",
-  //   "Apr",
-  //   "May",
-  //   "Jun",
-  //   "Jul",
-  //   "Aug",
-  //   "Sep",
-  //   "Oct",
-  //   "Nov",
-  //   "Dec",
-  // ];
-
   const addExpenseHandler = (expense) => {
     //Using state to add the new items into the array
     setExpenses(prevExpenses => {
